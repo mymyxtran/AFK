@@ -70,7 +70,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-## This React App was created by running the following commands 
-npm install @material-ui/core
-npm install @material-ui/icons
 
+         
+            <form className={classes.root} noValidate autoComplete="off">
+                <TextField  required id="standard-required" label="Input the clothing article's url" />
+            </form>      
+
+            return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Name:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
