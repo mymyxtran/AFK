@@ -1,7 +1,7 @@
-# Welcome to AFK
-
-## Wear the change you want to see
+# Welcome to AFK: Wear the change you want to see
 Where fashion meets sustainability
+Created in collaboration with ...
+![alt text](https://github.com/mymyxtran/AFK/blob/main/m3xhams.png) 
 
 ### Before install the following:
 ```
@@ -28,5 +28,4 @@ ls -la
 ``` 
 to see hidden files
 
-## Created in collaboration with ...
-![alt text](https://github.com/mymyxtran/AFK/blob/main/m3xhams.png) 
+
