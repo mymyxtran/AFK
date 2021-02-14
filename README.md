@@ -1,7 +1,7 @@
 # Welcome to A Fashion (Know)mad
 - [x] Wear the change you want to see
 - [x] Where fashion meets sustainability
-Created in collaboration with ...
+- [x] Created in collaboration with ...
 ![alt text](https://github.com/mymyxtran/AFK/blob/main/m3xhams.png) 
 
 ### Before install the following:
