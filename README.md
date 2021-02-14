@@ -2,10 +2,16 @@
 ## Where fashion meets sustainability
 
 ### Before install the following:
-```npm install @material-ui/core```
-```npm install @material-ui/icons```
-```npm install @material-ui/core```
-```npm install @material-ui/styles```
+npm install @material-ui/core
+npm install @material-ui/icons
+npm install @material-ui/core
+npm install @material-ui/styles
+npm i @devexpress/dx-react-chart@2.7.4
+npm install @devexpress/dx-react-chart-material-ui@2.7.4
+npm i @devexpress/dx-react-chart-material-ui     (for charts check out this page for others https://www.npmjs.com/package/@devexpress/
+
+
+dx-react-chart-material-ui)
 ### How to run the project from terminal:
 ```npm run build```
 ```npm start```
