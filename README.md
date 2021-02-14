@@ -1,5 +1,6 @@
 # Welcome to AFK
 In collaboration with M^3 and Hams.
+![alt text](https://github.com/[mymyxtran]/[AFK]/images.png?raw=true)
 ## Wear the change you want to see
 Where fashion meets sustainability
 
