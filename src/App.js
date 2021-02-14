@@ -13,10 +13,11 @@ import Grid from "@material-ui/core/Grid";
 import MenuIcon from '@material-ui/icons/Menu';
 import Box from '@material-ui/core/Box';
 import { createMuiTheme, ThemeProvider, withStyles } from '@material-ui/core/styles';
-import background from "./bg.jpg";
+import background from "./img/bg.jpg";
 import Chart from './Components/charts';
 import Table from "./Components/table"
-import thelowerbackground from "./bg-question.png"
+import thelowerbackground from "./img/bg-question.png"
+
 
 const imagesPath = {
   minus: "bg.jpg",
@@ -95,23 +96,44 @@ function App() {
                 <TextField  required id="standard-required" label="Input the clothing article's url" />
             </form>    */}
       </Box> 
-      <div className={classes.backgroundStyle2} > 
-       <Box p ={10}> 
-        <Grid container spacing={4} >
-          <Grid item xs={6} sm={7}>
-          <Paper className={classes.paper}>    <Chart /></Paper>
-        </Grid>
-        <Grid item xs={6} sm={4}>
-          <Paper className={classes.paper}> <Table />  </Paper>
-          <ChangeLowerBackground/>
-        </Grid>
-        </Grid>
-        </Box>
-      </div>
-
+      <Data backgroundField = {classes.backgroundStyle2} paper = {classes.paper}  />
+     
       </ThemeProvider>
     </div>
   );
+}
+
+function Data (props) {
+    return(
+      <div className={props.backgroundField} > 
+      <Box p ={10}> 
+        <Grid container spacing={4} >
+          <Grid item xs={6} sm={7}>
+            <Paper className={props.paper}>    <Chart /></Paper>
+          </Grid>
+          <Grid item xs={6} sm={4}>
+            <Paper className={props.paper}> <Table />  </Paper>
+            <ChangeLowerBackground/>
+          </Grid>
+        </Grid>
+      </Box>
+    </div>
+      // <div className={classes.backgroundStyle2} > 
+      //   <Box p ={10}> 
+      //     <Grid container spacing={4} >
+      //       <Grid item xs={6} sm={7}>
+      //         <Paper className={classes.paper}>    <Chart /></Paper>
+      //       </Grid>
+      //       <Grid item xs={6} sm={4}>
+      //         <Paper className={classes.paper}> <Table />  </Paper>
+      //         <ChangeLowerBackground/>
+      //       </Grid>
+      //     </Grid>
+      //   </Box>
+      // </div>
+    );
+    
+  
 }
 
 class ClothingTypeInputForm extends React.Component {
