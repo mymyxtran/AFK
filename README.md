@@ -1,5 +1,6 @@
 # Welcome to AFK
-## Where fashion meets sustainability
+## Wear the change you want to see
+Where fashion meets sustainability
 
 ### Before install the following:
 ```
