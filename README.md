@@ -28,5 +28,5 @@ ls -la
 ``` 
 to see hidden files
 
-Created in collaboration with ...
+## Created in collaboration with ...
 ![alt text](https://github.com/mymyxtran/AFK/blob/main/m3xhams.png) 
