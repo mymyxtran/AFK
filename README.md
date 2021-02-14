@@ -1,7 +1,7 @@
 # Welcome to AFK
 In collaboration with ...
 
-![alt text](https://github.com/mymyxtran/AFK/blob/main/images.png) + ![alt text](https://github.com/mymyxtran/AFK/blob/main/cartoon-ham-8.gif)
+![alt text](https://github.com/mymyxtran/AFK/blob/main/m3xhams.png) 
 ## Wear the change you want to see
 Where fashion meets sustainability
 
