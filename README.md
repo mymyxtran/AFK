@@ -1,9 +1,9 @@
 # Welcome to A Fashion (Know)mad
 - [x] Wear the change you want to see
 - [x] Where fashion meets sustainability
-### Created in collaboration with ... m^3 + hams
+### Created in collaboration with ... 
 ![alt text](https://github.com/mymyxtran/AFK/blob/main/m3xhams.png) 
-
+https://devpost.com/software/afk-1h4bkn
 ### Before install the following:
 ```
 npm install @material-ui/core
