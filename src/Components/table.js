@@ -19,9 +19,9 @@ function createData(name, calories, fat, carbs, protein) {
 }
 
 const rows = [
-  createData('Aritzia', 0.1, 0.02, 0.78, 0.1),
-  createData('Gap', 0.8, 0.1, 0.09, 0.01),
-  createData('Local', 0.2, 0.2, 0.2, 0.4),
+  createData('Aritzia: Weekend T-Shirt', 0.1, 0.02, 0.78, 0.1),
+  createData('Gap: Jersey Knit Tee ', 0.8, 0.1, 0.09, 0.01),
+  createData('Local: Modern Tee', 0.2, 0.2, 0.2, 0.4),
 ];
 
 export default function AcccessibleTable() {
