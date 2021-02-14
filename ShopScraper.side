@@ -1,0 +1,457 @@
+{
+  "id": "e66c74d2-7c27-4287-bb64-f0e18e979488",
+  "version": "2.0",
+  "name": "H&amp;M Scraper",
+  "url": "https://www.aritzia.com/en/home",
+  "tests": [{
+    "id": "f8cb9a78-8a70-4076-a232-e237b5466616",
+    "name": "Try H&M Scraper",
+    "commands": [{
+      "id": "86c2eeea-05e1-4743-b918-6d30e174f607",
+      "comment": "",
+      "command": "open",
+      "target": "/en_ca/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1292e16-7e1b-453e-82ad-86d9a47062de",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "782x871",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e2de7ba-9ee7-40c3-83ef-559d7bcf1522",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu__trigger",
+      "targets": [
+        ["css=.menu__trigger", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd263b8d-2e67-4d3b-ac3a-44d055b3f105",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Divided",
+      "targets": [
+        ["linkText=Divided", "linkText"],
+        ["css=.menu__super:nth-child(3) > .menu__super-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/en_ca/divided.html')]", "xpath:href"],
+        ["xpath=//ul[2]/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Divided')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c6032c1-d7b7-4338-9583-198a00b42a35",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1096.800048828125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea513402-a3d9-4e1d-bc07-8eb7c8775084",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Shirts & Blouses",
+      "targets": [
+        ["linkText=Shirts & Blouses", "linkText"],
+        ["css=.is-open > .menu--unfolded .menu__item:nth-child(5) > .menu__sub-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Shirts & Blouses')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/en_ca/divided/shop-by-product/shirts-and-blouses.html')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li[5]/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f45417ea-ed95-4e02-8fe5-19f7a702b430",
+      "comment": "Acccesor",
+      "command": "click",
+      "target": "css=.product-item:nth-child(2) .item-image",
+      "targets": [
+        ["css=.product-item:nth-child(1) .item-image", "css:finder"],
+        ["xpath=//img[@alt='Oversized ShirtModel']", "xpath:img"],
+        ["xpath=//div[@id='page-content']/div/div[3]/ul/li/article/div/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b84eaa46-bdc3-4e8e-9ebf-2e9edac63eb6",
+      "comment": "Price",
+      "command": "click",
+      "target": "css=.ProductPrice-module--productItemPrice__2i2Hc > span",
+      "targets": [
+        ["css=.ProductPrice-module--productItemPrice__2i2Hc > span", "css:finder"],
+        ["xpath=//hm-product-price[@id='product-price']/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'$39.99')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "510816ce-c05f-4b1e-a9f8-779c23510fd2",
+      "comment": "General Description Label",
+      "command": "click",
+      "target": "css=.product-input-label",
+      "targets": [
+        ["css=.product-input-label", "css:finder"],
+        ["xpath=//main[@id='main-content']/div[2]/div[2]/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Denim blue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3868da9-bd28-46ed-a30d-0bd4474685fb",
+      "comment": "Image Link",
+      "command": "click",
+      "target": "css=.product-detail-main-image-container > img",
+      "targets": [
+        ["css=.product-detail-main-image-container > img", "css:finder"],
+        ["xpath=//img[@alt='Oversized Shirt - Denim blue - Ladies | H&M CA']", "xpath:img"],
+        ["xpath=//main[@id='main-content']/div[2]/div[2]/div/figure/div/img", "xpath:idRelative"],
+        ["xpath=//div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45b930e6-a636-4abb-8c13-90aab88fbec3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.close:nth-child(3)",
+      "targets": [
+        ["css=.close:nth-child(3)", "css:finder"],
+        ["xpath=//button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7f7ad6a-6807-42dd-bdf1-4e90df0dd7c6",
+      "comment": "General Description",
+      "command": "click",
+      "target": "css=.pdp-text",
+      "targets": [
+        ["css=.pdp-text", "css:finder"],
+        ["xpath=//main[@id='main-content']/div[2]/div[2]/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75ce9ee3-114f-4363-9232-baf061b9ce55",
+      "comment": "Fit",
+      "command": "click",
+      "target": "css=.pdp-description-list-item:nth-child(1)",
+      "targets": [
+        ["css=.pdp-description-list-item:nth-child(1)", "css:finder"],
+        ["xpath=//main[@id='main-content']/div[2]/div[2]/div/div[2]/div/div/dl/div", "xpath:idRelative"],
+        ["xpath=//dl/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "900187e1-4951-41de-adca-be8fe2b2f973",
+      "comment": "Material",
+      "command": "click",
+      "target": "css=.pdp-description-list-item:nth-child(2)",
+      "targets": [
+        ["css=.pdp-description-list-item:nth-child(2)", "css:finder"],
+        ["xpath=//main[@id='main-content']/div[2]/div[2]/div/div[2]/div/div/dl/div[2]", "xpath:idRelative"],
+        ["xpath=//dl/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de13daa7-440d-4567-ba10-bfebef86aed2",
+      "comment": "Maybe a helpful score",
+      "command": "//click",
+      "target": "css=.average-score",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8b09739-da36-4789-8071-ebf0a76e4a9f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-open-sustainability",
+      "targets": [
+        ["css=.js-open-sustainability", "css:finder"],
+        ["xpath=//main[@id='main-content']/div[2]/div[2]/div[2]/menu/ul/li[4]/button", "xpath:idRelative"],
+        ["xpath=//menu/ul/li[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'PRODUCT BACKGROUND')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "944e08f4-288d-4e57-8228-113b3076f4e6",
+      "comment": "Open List",
+      "command": "click",
+      "target": "css=.CTA-module--iconPosition-end__Q9WNd",
+      "targets": [
+        ["css=.CTA-module--iconPosition-end__Q9WNd", "css:finder"],
+        ["xpath=(//button[@type='button'])[89]", "xpath:attributes"],
+        ["xpath=//div[@id='portal']/div/div/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Suppliers and factories for this product.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "919de064-8919-4f5b-a1a2-d96fe3ab0548",
+      "comment": "Country of Manufacture",
+      "command": "click",
+      "target": "css=.ProductBackground-module--supplierInfoCountry__14s8D > .Heading-module--general__3HQET",
+      "targets": [
+        ["css=.ProductBackground-module--supplierInfoCountry__14s8D > .Heading-module--general__3HQET", "css:finder"],
+        ["xpath=//div[@id='portal']/div[2]/div/div[3]/div/article/h3", "xpath:idRelative"],
+        ["xpath=//article/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Bangladesh')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "02f5bb2a-c5a5-417e-8c1d-eb0151a7883b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#toggle-122422_supp > .BodyText-module--general__32l6J",
+      "targets": [
+        ["css=#toggle-122422_supp > .BodyText-module--general__32l6J", "css:finder"],
+        ["xpath=//button[@id='toggle-122422_supp']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/div/article/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'CUTTING EDGE INDUSTRIES LTD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a5607c2-d1e6-4309-b3fc-2d1723b56dc9",
+      "comment": "Manufacturer Name",
+      "command": "click",
+      "target": "css=.ProductBackground-module--factories__h_ikg > .Heading-module--general__3HQET",
+      "targets": [
+        ["css=.ProductBackground-module--factories__h_ikg > .Heading-module--general__3HQET", "css:finder"],
+        ["xpath=//div[@id='section-122422_supp']/div/article/h4", "xpath:idRelative"],
+        ["xpath=//article/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'CUTTING EDGE INDUSTRIES LTD.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c7ddd7c-5a14-4aff-b8a3-6bb531203cad",
+      "comment": "Manufacturer Address",
+      "command": "click",
+      "target": "css=.ProductBackground-module--factories__h_ikg > .BodyText-module--general__32l6J",
+      "targets": [
+        ["css=.ProductBackground-module--factories__h_ikg > .BodyText-module--general__32l6J", "css:finder"],
+        ["xpath=//div[@id='section-122422_supp']/div/article/address", "xpath:idRelative"],
+        ["xpath=//address", "xpath:position"],
+        ["xpath=//address[contains(.,'1612, Dakhin Salna, Salna Bazar, Sadar, 1702, Gazipur')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1532a541-3c1b-4c6a-8a62-2d3b5d034729",
+      "comment": "Number of Workers",
+      "command": "click",
+      "target": "css=dl > dd",
+      "targets": [
+        ["css=dl > dd", "css:finder"],
+        ["xpath=//div[@id='section-122422_supp']/div/article/dl/dd", "xpath:idRelative"],
+        ["xpath=//dl/dd", "xpath:position"],
+        ["xpath=//dd[contains(.,'3501-4000')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7d4d70f7-8a85-44b0-982f-95888819d1f2",
+    "name": "Load More Scraper",
+    "commands": [{
+      "id": "42aa6cd8-fb43-48ee-baf6-6652c432c44a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www2.hm.com/en_ca/divided/shop-by-product/shirts-and-blouses.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad256c41-c181-4b50-9686-df236a4bdd4d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "819891da-bcaf-460d-bb6c-fb3e9bef44f4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,815.2000122070312)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "453d39ac-d046-418d-b84b-9859fdc6c8bb",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2025.5999755859375)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b5d5f23-c7af-4237-9373-717909b53e5b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2961.60009765625)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b03883d-af7b-437c-86f8-e88f65c0a6c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-load-more",
+      "targets": [
+        ["css=.js-load-more", "css:finder"],
+        ["xpath=//div[@id='page-content']/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "cb845ca4-bda7-4439-abc5-c950fae18e74",
+    "name": "Aritzia Scraper",
+    "commands": [{
+      "id": "f4a95eeb-bec3-4170-a981-4d3e8291d7ac",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.aritzia.com/en/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b573a310-c563-4337-a472-b0272bc3b561",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5ff8f37-b027-4bdd-943d-af9d037e62a7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Clothing",
+      "targets": [
+        ["linkText=Clothing", "linkText"],
+        ["css=.ar-header__panel-trigger--is-active", "css:finder"],
+        ["xpath=//a[contains(text(),'Clothing')]", "xpath:link"],
+        ["xpath=//div[@id='wrapper']/div/div[2]/header/div[2]/div/div[2]/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.aritzia.com/en/clothing')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Clothing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "043fd320-391b-4cf2-9cf4-11e9ff594587",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active > .refinement-link-text",
+      "targets": [
+        ["css=.active > .refinement-link-text", "css:finder"],
+        ["xpath=//div[@id='secondary']/div/div/div[2]/ul/li[3]/ul/li[7]/a/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13ed94bc-f22d-4c9d-9dca-f6e7dd55b61c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,192)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffb27326-1614-4f4f-a432-c720d4af06d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ar-product-grid__tile:nth-child(1) .product-image .lazy",
+      "targets": [
+        ["css=.ar-product-grid__tile:nth-child(1) .product-image .lazy", "css:finder"],
+        ["xpath=//img[@alt='UTILITY BUTTON-UP - Button-up shirt']", "xpath:img"],
+        ["xpath=//div[@id='primary']/div[3]/ul/li/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//li/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74220168-13ae-4593-a6db-c79084875a6d",
+      "comment": "Product Name",
+      "command": "click",
+      "target": "css=.pdp-product-name__name:nth-child(1)",
+      "targets": [
+        ["css=.pdp-product-name__name:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='pdp-panel-stuck']/div/h1/span", "xpath:idRelative"],
+        ["xpath=//h1/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dde42bab-2aa4-46de-87c4-a3a8f298df83",
+      "comment": "Product Description",
+      "command": "click",
+      "target": "css=.pdp-product-name > .pdp-product-name__subtitle",
+      "targets": [
+        ["css=.pdp-product-name > .pdp-product-name__subtitle", "css:finder"],
+        ["xpath=//div[@id='pdp-panel-stuck']/div/h1/span[2]", "xpath:idRelative"],
+        ["xpath=//h1/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e376214b-3912-4c8e-97b0-3c8c9435e784",
+      "comment": "Price",
+      "command": "click",
+      "target": "css=.price-default > span",
+      "targets": [
+        ["css=.price-default > span", "css:finder"],
+        ["xpath=//div[@id='pdp-panel-stuck']/div/div[2]/div/span/span", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16acba74-8149-40c2-9d5e-fe818ecd2e0d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Details",
+      "targets": [
+        ["linkText=Details", "linkText"],
+        ["css=#pdp-details > .pdp-tab-trigger", "css:finder"],
+        ["xpath=//div[@id='pdp-details']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[5]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de0452ea-4afc-4960-b39c-64097cce3da5",
+      "comment": "Material Content",
+      "command": "click",
+      "target": "css=.js-product-accordion__content:nth-child(4) li:nth-child(1)",
+      "targets": [
+        ["css=.js-product-accordion__content:nth-child(4) li:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='pdp-details']/div/div/ul/li", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Content: 100% Lyocell')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a92fb3cb-bc82-4675-996c-89eb0a8b4cb4",
+      "comment": "Scrape all details",
+      "command": "click",
+      "target": "id=pdp-panel-stuck",
+      "targets": [
+        ["id=pdp-panel-stuck", "id"],
+        ["css=#pdp-panel-stuck", "css:finder"],
+        ["xpath=//div[@id='pdp-panel-stuck']", "xpath:attributes"],
+        ["xpath=//div[@id='pdp-panel-purchase']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4aefb442-26fe-463f-9d2b-d96a30a68196",
+      "comment": "Fetch Class to get rating",
+      "command": "click",
+      "target": "css=.js-pdp-accordian-reviews__tab-trigger > .TTratingBox",
+      "targets": [
+        ["css=.js-pdp-accordian-reviews__tab-trigger > .TTratingBox", "css:finder"],
+        ["xpath=//div[@id='pdp-reviews']/a/span/span[2]/div", "xpath:idRelative"],
+        ["xpath=//span[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ddd88da7-5517-4747-a733-07bd6a7eb037",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f8cb9a78-8a70-4076-a232-e237b5466616"]
+  }],
+  "urls": ["https://www2.hm.com/"],
+  "plugins": []
+}
