@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
@@ -16,8 +16,8 @@ import { createMuiTheme, ThemeProvider, withStyles } from '@material-ui/core/sty
 import background from "./img/bg.jpg";
 import Chart from './Components/charts';
 import Table from "./Components/table"
-import thelowerbackground from "./img/bg-question.png"
-
+import thelowerbackground from "./img/bg-beige-01.png"
+import SearchGrid from "./Components/ReactGrid-Searching"
 
 const imagesPath = {
   minus: "bg.jpg",
@@ -83,7 +83,7 @@ function App() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            a fashion knomad
+            a fashion knowmad
           </Typography>
           {/* <Button color="inherit">Login</Button> */}
         </Toolbar>
@@ -97,7 +97,6 @@ function App() {
             </form>    */}
       </Box> 
       <Data backgroundField = {classes.backgroundStyle2} paper = {classes.paper}  />
-     
       </ThemeProvider>
     </div>
   );
@@ -108,14 +107,22 @@ function Data (props) {
       <div className={props.backgroundField} > 
       <Box p ={10}> 
         <Grid container spacing={4} >
-          <Grid item xs={6} sm={7}>
-            <Paper className={props.paper}>    <Chart /></Paper>
+          <Grid item xs={6} sm={8}>
+            <Paper className={props.paper}>   
+               <Chart />
+            </Paper>
           </Grid>
           <Grid item xs={6} sm={4}>
-            <Paper className={props.paper}> <Table />  </Paper>
+            <Paper className={props.paper}> 
+              <Table /> 
+            </Paper>
             <ChangeLowerBackground/>
           </Grid>
+          <Grid item xs={12} sm={20}>
+          <SearchGrid/> 
+          </Grid>
         </Grid>
+
       </Box>
     </div>
       // <div className={classes.backgroundStyle2} > 

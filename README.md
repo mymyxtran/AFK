@@ -8,6 +8,7 @@ npm install @material-ui/core
 npm install @material-ui/styles
 npm i @devexpress/dx-react-chart@2.7.4
 npm install @devexpress/dx-react-chart-material-ui@2.7.4
+npm i @devexpress/dx-react-grid-material-ui
 npm i @devexpress/dx-react-chart-material-ui     (for charts check out this page for others https://www.npmjs.com/package/@devexpress/
 
 
